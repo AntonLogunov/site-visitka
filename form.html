@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/ico" sizes="32x32" href="icons/favicon.ico">
+        <link rel="icon" type="image/ico" sizes="16x16" href="icons/favicon.ico">
+        <link rel="shortcut icon" href="icons/favicon.ico">
+        <title>Форма</title>
+        <meta name="keywords" content="Тема, Имя, E-mail, Укажите дату, Укажите номер">
+        <meta name="description" content="форма заполнения">
+    </head>
+    <body class="serif">
+        <div id="wrapper">
+            <header class="clearfix text-redact">
+                <a href="index.html" class="logo"><span class="pink">САЙТ </span><i>ВИЗИТКА</i></a>
+                <nav id="mainnav">
+                    <ul class="text-menu"> 
+                       <li><a href="ee uslugi.html">УСЛУГИ</a></li>
+                       <li><a href="o nas.html">О НАС</a></li>
+                       <li><a href="client.html">КЛИЕНТЫ</a></li>
+                       <li><a href="contact.html">КОНТАКТЫ</a></li>
+                    </ul>
+                </nav>
+            </header>
+        <main>
+            <form id="contact-form" action="">
+                <div class="form_item">
+                    <label for="topic"><i>Тема</i></label><br>
+                    <select name="topic" id="topic">
+                        <option value="1">Заказать услугу</option>
+                        <option value="2">Оставить отзыв/замечание</option>
+                        <option value="3">Предложить сотрудничество</option>
+                        <option value="4">Другое</option>
+                    </select>
+                </div>
+                <div class="form_item">
+                    <label for="name"><i>Имя</i></label><br>
+                    <input name="name" id="name" type="text" placeholder="Антон" required autofocus>
+                </div>
+                <div class="form_item">
+                    <label for="email"><i>E-mail</i></label><br>
+                    <input name="email" id="email" type="email" placeholder="...@gmail.com" required>
+                </div>
+                <div>
+                    <label for="data">Укажите дату</label><br>
+                    <input name="data" id="data" type="data" pattern="[0-9]{2}\.[0-9]{2}\.[0-9]{4}" placeholder="ДД.ММ.ГГГГ" required>
+                </div>
+                <div>
+                    <label for="tel">Укажите свой номер телефона</label><br>
+                    <input name="tel" id="tel" type="tel" pattern="\+7\-[0-9]{3}\-[0-9]{3}\-[0-9]{2}\-[0-9]{2}" placeholder="+7-XXX-XXX-XX-XX" required>
+                </div>
+                <div class="form_item">
+                    <label for="textarea"><i>Введите текст</i></label><br>
+                    <textarea id="textarea" rows="5" placeholder="Введите текст" required></textarea>
+                </div>
+                <div class="form_item">
+                    <input type="submit">
+                </div>
+            </form>
+        </main>
+    </div>
+    <footer>
+        <p class="footer_block" id="mainnav"><a href="form.html">НАПИСАТЬ НАМ &#9650</a></p>
+        <p class="footer_block"><span class="correct">&copy; Новая компания</span></p>
+        <div class="footer_icons">
+            <a href="http://faceboock.com" target="_blank"><img src="img/faceboock.png" alt="" class="footer_img"></a>
+           <a href="http://instagram.com" target="_blank"><img src="img/instagram.png" alt="" class="footer_img"></a>
+           <a href="http://vk.com" target="_blank"><img src="img/vk.png" alt="" class="footer_img"></a>
+        </div>
+    </footer>
+</body>
+</html>

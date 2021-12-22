@@ -1,0 +1,288 @@
+*  {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+    height: 100%;
+}
+
+header, main, footer {
+    width: 1040px;
+    margin: 0 auto;
+}
+
+#wrapper{
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    width: 100%;
+}
+
+header {
+    height:120px;
+    font-size: 21px;
+}
+
+
+main{
+    padding-bottom: 100px;
+}
+
+footer{
+    margin: -100px auto 0;
+    position: relative;
+    height: 100px;
+}
+
+body{
+    background-color: #380577;
+    color: white;
+}
+
+#panorama {
+    width: 100%;
+    height: 230px;
+    background: url(../content/1.jfif) no-repeat center 70%;
+    background-size: cover; /*масштабирование фона*/
+    
+}
+
+.services_item{
+    width: 240px;
+    margin: 40px 40px 60px 60px;
+    float: left;
+}
+
+.services_img {
+    width: 240px;
+}
+
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.img-float {
+    width: 500px;
+    height: 320px;
+    margin-right: 60px;
+    float: left;
+}
+
+.h1-invisible{
+    visibility: hidden;
+}
+
+.img-center {
+    width: 600px;
+    margin: 15px;
+    border-radius: 10px;
+}
+
+.about_text{
+    text-align: center;
+}
+.about_text p{
+    line-height: 21px;
+    text-align: left;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text-menu{
+    
+    list-style: none;
+    display: inline-block;
+}
+.text-menu li{
+    padding-left: 100px;
+    font-size: x-large;
+    display: inline;
+}
+.text-menu a{
+    color: white;
+    text-decoration: none;
+}
+.menu{
+    text-decoration: none;
+    color: brown;
+}
+
+.logo{
+    display: inline;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+    float:left;
+}
+
+.pink{
+    color: deeppink;
+}
+.footer_block{
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    width: 335px;
+    text-align: center;
+}
+.footer_icons{
+    display: inline-block;
+    width: 335px;
+    text-align: right;
+    padding-left: 10px;
+}
+.footer_img{
+    width: 50px;
+    margin-left: 10px;
+}
+.text{
+    line-height: 40px;
+    font-size: xx-large;
+    color: white;
+    text-decoration: none;
+}
+.text-redact{
+    text-align: center;
+    font-size: 24px;
+    padding-top: 70px;
+    list-style: none;
+}
+.punct{
+    padding: 10px;
+    color: deeppink;
+}
+.contant{
+    line-height: 50px;
+    font-size: 35px;
+    list-style: none;
+    text-align: center;
+    font-size: xx-large;
+}
+.contant a{
+    font-size: 32px;
+    color: white;
+    text-decoration: none;
+}
+.contant a:hover{
+    color: mediumpurple;
+}
+.serif{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+#mainnav ul{
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+#mainnav li{
+    display: inline;
+}
+#mainnav a{
+    color: white;
+    text-decoration: none;
+}
+#mainnav a:hover{
+    text-decoration: underline;
+}
+#mainav li.active a{
+    font-weight: bold;
+}
+.new::after{
+    content: "new";
+    font-size: 10px;
+    vertical-align: super;
+    background-color: violet;
+    border-radius: 2px;
+    padding: 3px;
+    margin-left: 5px;
+}
+
+
+
+
+
+table{
+    border-top: 5px solid #f60ad5;
+    border-collapse: collapse;
+    margin: 50px;
+}
+td{
+    border-bottom:2px solid white;
+    padding: 10px;
+}
+th{
+    border-bottom: 5px solid #f60ad5;
+    padding: 10px;
+}
+tr:nth-child(even){
+    background-color:#8642da;
+}
+caption{
+    padding: 10px;
+    text-align: left;
+}
+.price th:first-child{
+    width: 10%;
+}
+.price th:nth-child(2), .price th:last-child{
+    width: 25%;
+}
+.alignment{
+    text-align: center;
+}
+.alignment-left{
+    text-align: left;
+}
+.center th{
+    text-align: center;
+}
+
+
+
+#topic{
+    height: 28px;
+    width: 250px;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: white solid 1px;
+    background-color: #eddfff;
+}
+#contact-form input[type="text"],[type="email"],[type="data"],[type="tel"]{
+    height: 28px;
+    width: 250px;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: white solid 1px;
+    background-color: #eddfff;
+}
+
+
+#textarea{
+    height: 150px;
+    width: 250px;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: white solid 1px;
+    background-color: #eddfff;
+}
+#contact-form input[type="submit"]{
+    padding: 5px;
+    width: 130px;
+    text-transform: uppercase;
+    font-style: oblique;
+    background-color: mediumpurple;
+}
+#contact-form input[type="submit"]:hover{
+    background-color: #eddfff;
+    text-decoration: none;
+}
+input:valid {
+    background: rgba(0,128,0,0.2); 
+}
